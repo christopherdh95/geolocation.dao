@@ -1,0 +1,15 @@
+package com.webrtc.dao;
+2	
+3	import java.util.List;
+4	
+5	import com.webrtc.model.Geolocation;
+6	
+7	public interface GeolocationDao {
+…	
+12		public List<Geolocation> listGeolocations();
+13		
+14		public Geolocation getGeolocation(String sipUri);
+15		
+16		public void deleteGeolocation(Geolocation geolocation);
+17		
+18	}
